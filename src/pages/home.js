@@ -1,21 +1,7 @@
 import React from "react"
 import Header from "../components/header"
 import { StaticImage } from "gatsby-plugin-image"
-import styled from "styled-components";
-
-const Main = styled.div`
-    font-size: 2em;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    position: absolute;
-    justify-content: space-between;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 10%;
-    gap: 1em;
-`
+import { mainDiv } from "../styles/home.module.scss";
 
 const Home = () => {
     return (
@@ -27,11 +13,11 @@ const Home = () => {
                     layout="fullWidth"
                     alt="home image"
                 />
-                <Main>
+                <div class={mainDiv}>
                     <text>LOGO HERE</text>
                     <text>VIP PRESSURE WASHING</text>
                     <text>(999)-999-9999</text>
-                </Main>
+                </div>
             </div>
         </div>
     )

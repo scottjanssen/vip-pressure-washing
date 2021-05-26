@@ -1,0 +1,13 @@
+.main-div {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    justify-content: space-between;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 10%;
+    gap: 1em;
+}
