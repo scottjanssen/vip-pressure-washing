@@ -8,6 +8,11 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@fontsource/arapey": "^4.4.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "gatsby": "^3.3.0",
     "gatsby-image": "^3.3.0",
     "gatsby-plugin-image": "^1.5.0",
@@ -20,9 +25,11 @@
     "gatsby-source-wordpress": "^5.3.0",
     "gatsby-transformer-sharp": "^3.3.0",
     "html-react-parser": "^1.1.1",
+    "install": "^0.13.0",
     "lodash": "^4.17.20",
     "mitt": "^2.1.0",
     "node-sass": "^6.0.0",
+    "npm": "^7.15.0",
     "postcss": "^8.2.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
