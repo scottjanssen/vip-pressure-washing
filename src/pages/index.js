@@ -6,6 +6,7 @@ import { Card, Button, ButtonGroup } from "@blueprintjs/core";
 import { Divider } from "@material-ui/core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Footer } from "../components/footer"
 
 const Home = () => {
     return (
@@ -17,10 +18,10 @@ const Home = () => {
                     layout="fullWidth"
                     alt="home image"
                 />
-                <div class={mainDiv}>
-                    <text>LOGO HERE</text>
-                    <text>VIP PRESSURE WASHING</text>
-                    <text>(999)-999-9999</text>
+                <div className={mainDiv}>
+                    <p>LOGO HERE</p>
+                    <p>VIP PRESSURE WASHING</p>
+                    <p>(999)-999-9999</p>
                 </div>
                 <StaticImage
                     src="../../content/assets/bricks.png"
@@ -111,6 +112,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
