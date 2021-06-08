@@ -2,6 +2,7 @@ import React from "react"
 import Header from "../components/header"
 import { StaticImage } from "gatsby-plugin-image"
 import { mainDiv } from "../styles/home.module.scss";
+import { Footer } from "../components/footer"
 
 const Home = () => {
     return (
@@ -13,12 +14,13 @@ const Home = () => {
                     layout="fullWidth"
                     alt="home image"
                 />
-                <div class={mainDiv}>
-                    <text>LOGO HERE</text>
-                    <text>VIP PRESSURE WASHING</text>
-                    <text>(999)-999-9999</text>
+                <div className={mainDiv}>
+                    <p>LOGO HERE</p>
+                    <p>VIP PRESSURE WASHING</p>
+                    <p>(999)-999-9999</p>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

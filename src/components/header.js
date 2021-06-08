@@ -3,10 +3,10 @@ import {headerDiv, headerText} from "../styles/header.module.scss";
 
 const Header = () => {
     return (
-        <div class={headerDiv}>
-            <text class={headerText}>
+        <div className={headerDiv}>
+            <p className={headerText}>
                 MENU HERE
-            </text>
+            </p>
         </div>
     )
 }
