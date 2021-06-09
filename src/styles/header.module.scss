@@ -1,11 +1,59 @@
 .header-div {
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(19,36,96);
-    z-index: 2;
+  height: 20%;
+  min-height: 3em;
+  background-color: rgb(19, 36, 96);
+  z-index: 2;
 }
-.header-text {
-    color: white;
-    font-size: 2em;
+
+.logo {
+  float: left;
+  color: white;
+  margin-top: 0.5em;
+}
+
+.linksDesktop {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  gap: 2em;
+}
+
+.menu-link {
+  color: black;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  font-weight: bold;
+}
+
+.hamburgerButtonDiv {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  float: right;
+  padding: 0.5em;
+}
+
+.hamburgerButton {
+  height: 100%;
+}
+
+.menu {
+  background: white;
+  border-radius: 3px;
+  color: black;
+  list-style: none;
+  margin: 0;
+  min-width: 180px;
+  padding: 5px;
+  text-align: right;
+  z-index: 3;
 }
