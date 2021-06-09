@@ -3,7 +3,7 @@ import { footerDiv } from '../styles/footer.module.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram, faPinterestP, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-export const Footer = () => (
+const Footer = () => (
     <div className={footerDiv}>
         <div id="left">
             <ul>
@@ -29,7 +29,7 @@ export const Footer = () => (
             </ul>
         </div>
         <div id="copyright">
-            © {new Date().getFullYear()}, Perfect Blue Alchemy
+            © {new Date().getFullYear()}, VIP Pressure Washing
                     <br />
                     Powered By
                     {` `}
@@ -37,3 +37,5 @@ export const Footer = () => (
         </div>
     </div>
 )
+
+export default Footer;

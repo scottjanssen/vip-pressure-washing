@@ -1,17 +1,15 @@
 import React from "react"
-import Header from "../components/header"
+import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { mainDiv, services, servicesOutline, card, cardHeader, testimonials, testimonialsOutline, space, testimonialText, testimonialCard, infoText, cgroup } from "../styles/home.module.scss";
 import { Card, Button, ButtonGroup } from "@blueprintjs/core";
 import { Divider } from "@material-ui/core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Footer } from "../components/footer"
 
 const Home = () => {
     return (
-        <div>
-            <Header />
+        <Layout>
             <div>
                 <StaticImage
                     src="../../content/assets/homeimage.jpg"
@@ -112,8 +110,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
-        </div>
+        </Layout>
     )
 }
 

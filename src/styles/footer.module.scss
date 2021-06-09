@@ -1,8 +1,7 @@
 .footer-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  font-family: "Arapey", serif;
+  justify-content: space-evenly;
   white-space: pre-wrap;
   @media (max-width: 42rem) {
     flex-direction: column;
