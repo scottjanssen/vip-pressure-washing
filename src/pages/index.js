@@ -26,11 +26,11 @@ const Home = () => {
                     layout="fullWidth"
                     alt="home image"
                 />
-                <div class={servicesOutline}>
+                <div className={servicesOutline}>
                     <h3>Services</h3>
-                    <div class={services}>
+                    <div className={services}>
                         <Card elevation={4} className={card}>
-                            <div class={cardHeader}>
+                            <div className={cardHeader}>
                                 <text>Residential</text>
                             </div>
                             <StaticImage
@@ -51,7 +51,7 @@ const Home = () => {
                             </ul>
                         </Card>
                         <Card elevation={4} className={card}>
-                            <div class={cardHeader}>
+                            <div className={cardHeader}>
                                 <text>Commercial</text>
                             </div>
                             <StaticImage
@@ -72,7 +72,7 @@ const Home = () => {
                             </ul>
                         </Card>
                         <Card elevation={4} className={card}>
-                            <div class={cardHeader}>
+                            <div className={cardHeader}>
                                 <text>Roof Cleaning</text>
                             </div>
                             <StaticImage
@@ -87,19 +87,19 @@ const Home = () => {
                             <p>We use only the most up to date techniques and cleaning solutions, assuring you that the job will be done right the first time.</p>
                         </Card>
                     </div>
-                    <div class={space}></div>
-                    <div class={testimonialsOutline}>
+                    <div className={space}></div>
+                    <div className={testimonialsOutline}>
                         <h3>Testimonials</h3>
-                        <div class={testimonials}>
+                        <div className={testimonials}>
                             <Card className={testimonialCard}>
-                                <p class={testimonialText}>
+                                <p className={testimonialText}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
                                 <div className={cgroup}>
                                     <FontAwesomeIcon icon={faUser} />
-                                    <text class={infoText}>Name</text>
+                                    <text className={infoText}>Name</text>
                                     <Divider style={{color: "white"}} orientation={'vertical'} variation={'inset'} flexItem={true}/>
-                                    <text class={infoText}>Hometown</text>
+                                    <text className={infoText}>Hometown</text>
                                 </div>
                             </Card>
                         </div>
