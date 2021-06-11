@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { mainDiv, services, servicesOutline, card, cardHeader, testimonials, testimonialsOutline, space, testimonialText, testimonialCard, infoText, cgroup } from "../styles/home.module.scss";
-import { Card, Button, ButtonGroup } from "@blueprintjs/core";
+import { Card, Button, ButtonGroup, Text } from "@blueprintjs/core";
 import { Divider } from "@material-ui/core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -31,14 +31,13 @@ const Home = () => {
                     <div className={services}>
                         <Card elevation={4} className={card}>
                             <div className={cardHeader}>
-                                <text>Residential</text>
+                                <Text>Residential</Text>
                             </div>
                             <StaticImage
                                 src="../../content/assets/house.jpg"
                                 layout="fullWidth"
                                 alt="house"
                                 aspectRatio={16/9}
-                                height={200}
                             />
                             <ul>
                                 <li>House Pressure Washing</li>
@@ -52,14 +51,13 @@ const Home = () => {
                         </Card>
                         <Card elevation={4} className={card}>
                             <div className={cardHeader}>
-                                <text>Commercial</text>
+                                <Text>Commercial</Text>
                             </div>
                             <StaticImage
                                 src="../../content/assets/commercial2.jpg"
                                 layout="fullWidth"
                                 alt="commercial"
                                 aspectRatio={16/9}
-                                height={200}
                             />
                             <ul>
                                 <li>Gas Station Pressure Washing</li>
@@ -73,14 +71,13 @@ const Home = () => {
                         </Card>
                         <Card elevation={4} className={card}>
                             <div className={cardHeader}>
-                                <text>Roof Cleaning</text>
+                                <Text>Roof Cleaning</Text>
                             </div>
                             <StaticImage
                                 src="../../content/assets/roof.png"
                                 layout="fullWidth"
                                 alt="roof"
                                 aspectRatio={16/9}
-                                height={200}
                             />
                             <p>VIP pressure washing provides excellent low pressure roof cleaning in Atlanta, GA and surrounding
                             areas with a well trained crew to get the job done.</p>
@@ -97,9 +94,9 @@ const Home = () => {
                                 </p>
                                 <div className={cgroup}>
                                     <FontAwesomeIcon icon={faUser} />
-                                    <text className={infoText}>Name</text>
+                                    <Text className={infoText}>Name</Text>
                                     <Divider style={{color: "white"}} orientation={'vertical'} variation={'inset'} flexItem={true}/>
-                                    <text className={infoText}>Hometown</text>
+                                    <Text className={infoText}>Hometown</Text>
                                 </div>
                             </Card>
                         </div>

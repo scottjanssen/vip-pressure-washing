@@ -72,6 +72,10 @@ const Seo = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name:`viewport`,
+          content:`width=device-width, initial-scale=1.0`
+        }
       ].concat(meta)}
     />
   )
