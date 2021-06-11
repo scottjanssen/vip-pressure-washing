@@ -16,7 +16,7 @@ class Header extends Component {
         };
 
         this.OnOpen = this.OnOpen.bind(this);
-        this.OnClose = this.OnOpen.bind(this);
+        this.OnClose = this.OnClose.bind(this);
     }
 
     OnOpen(){
@@ -35,7 +35,7 @@ class Header extends Component {
 
         const HamburgerMenu = (
             <Menu className={menu}>
-                <Button OnClick={this.OnClose}>Close</Button>
+                <Button onClick={this.OnClose}>Close</Button>
                 <MenuItem href={"./"} className={menuLink} text="Home"/>
                 <MenuDivider/>
                 <MenuItem href={"./"} className={menuLink} text="About"/>
@@ -45,6 +45,7 @@ class Header extends Component {
                 <MenuItem href={"./"} className={menuLink} text="Contact Us"/>
             </Menu>
         );
+
         return (
             <div className={headerDiv}>
                 <head>
