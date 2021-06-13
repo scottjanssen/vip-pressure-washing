@@ -21,11 +21,6 @@ const Home = () => {
                     <p>VIP PRESSURE WASHING</p>
                     <p>(999)-999-9999</p>
                 </div>
-                <StaticImage
-                    src="../../content/assets/bricks.png"
-                    layout="fullWidth"
-                    alt="home image"
-                />
                 <div className={servicesOutline}>
                     <h3>Services</h3>
                     <div className={services}>

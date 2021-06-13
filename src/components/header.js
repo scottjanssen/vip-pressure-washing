@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import { headerDiv, logo, linksDesktop, link, hamburgerButtonDiv, hamburgerButton, menu, menuLink } from "../styles/header.module.scss";
-import { Navbar, NavbarHeading, Button, Menu, MenuItem, Position, MenuDivider} from "@blueprintjs/core";
+import { headerDiv, logo, linksDesktop, link, hamburgerButtonDiv, hamburgerButton, menu, menuLink, menuHeader, closeButton, mobileLinks, divider } from "../styles/header.module.scss";
+import { Navbar, NavbarHeading, Button, Menu, MenuItem, Position, MenuDivider, Text, Classes } from "@blueprintjs/core";
 import { Popover2 } from "@blueprintjs/popover2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'gatsby';
 import Media from 'react-media';
 
@@ -35,21 +35,26 @@ class Header extends Component {
 
         const HamburgerMenu = (
             <Menu className={menu}>
-                <Button onClick={this.OnClose}>Close</Button>
-                <MenuItem href={"./"} className={menuLink} text="Home"/>
-                <MenuDivider/>
-                <MenuItem href={"./"} className={menuLink} text="About"/>
-                <MenuDivider/>
-                <MenuItem href={"./"} className={menuLink} text="Schedule A Cleaning"/>
-                <MenuDivider/>
-                <MenuItem href={"./"} className={menuLink} text="Contact Us"/>
+                <div className={menuHeader}>
+                    <FontAwesomeIcon icon={faTimes} size="2x" onClick={this.OnClose} className={closeButton}></FontAwesomeIcon>
+                    <Text className={logo}>LOGO HERE</Text>
+                </div>
+                <div className={mobileLinks}>
+                    <MenuItem href={"./"} className={menuLink} text="Home"/>
+                    <MenuDivider/>
+                    <MenuItem href={"./"} className={menuLink} text="About"/>
+                    <MenuDivider/>
+                    <MenuItem href={"./"} className={menuLink} text="Schedule A Cleaning"/>
+                    <MenuDivider/>
+                    <MenuItem href={"./"} className={menuLink} text="Contact Us"/>
+                </div>
             </Menu>
         );
 
         return (
             <div className={headerDiv}>
                 <Navbar>
-                    <NavbarHeading className={logo}>Logo Here</NavbarHeading>
+                    <NavbarHeading className={logo}>LOGO HERE</NavbarHeading>
                     <Media queries={{
                         mobile: "(max-width: 600px)",
                         desktop: "(min-width: 601px)",
